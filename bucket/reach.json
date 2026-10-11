@@ -1,0 +1,28 @@
+{
+    "version": "0.7.6",
+    "description": "Open-source SSH client with SFTP, remote desktop, port tunneling and database tools",
+    "homepage": "https://reachssh.com",
+    "license": "MIT",
+    "notes": "Reach offers its own updates in the app. For a Scoop install, update with 'scoop update reach' instead, so Scoop keeps track of it.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/alexandrosnt/Reach/releases/download/v0.7.6/Reach_0.7.6_x64_en-US.msi",
+            "hash": "1bd4c72a27dbf7b326ad85228e65b3f290d74497569a2c55f0100c0562781350"
+        }
+    },
+    "extract_dir": "PFiles\\Reach",
+    "shortcuts": [
+        [
+            "reach.exe",
+            "Reach"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/alexandrosnt/Reach/releases/download/v$version/Reach_$version_x64_en-US.msi"
+            }
+        }
+    }
+}
